@@ -1,0 +1,26 @@
+version: '3'
+services:
+  scylla:
+    image: scylladb/scylla:5.1
+    container_name: scylla
+    restart: unless-stopped
+    ports:
+      - 9042:9042
+    networks: 
+      connet:
+        ipv4_address: 192.168.22.26
+    environment:
+      - SCYLLA_AUTH_ENABLED=true
+      - SCYLLA_AUTH_AUTHORIZATION_ENABLED=true
+    volumes:
+      - /scylla-data:/var/lib/scylla
+      - ${PWD}/config/scylla.yaml:/etc/scylla/scylla.yaml
+    mem_limit: 4g
+    cpus: 2
+
+networks:
+  connet:
+    external: true
+volumes:
+  scylla-data: 
+    driver: local
