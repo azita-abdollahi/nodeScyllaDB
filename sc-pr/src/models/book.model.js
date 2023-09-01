@@ -7,7 +7,7 @@ var bookModel = models.loadSchema('books', {
             default: {"$db_function": "uuid()"},
         },
         author: {
-            type: "int",
+            type: "text",
         },
         title: {
             type: "text",
