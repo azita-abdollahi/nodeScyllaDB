@@ -17,7 +17,7 @@ mkdir node_scylla
 cd node_scylla
 ```
 
-The nodeScylla Architecture is built with:
+The JWT Authentication Architecture is built with:
 
 - [Node.js](https://nodejs.org/) – a JavaScript run-time scripting language
 - [Expressjs](https://expressjs.com/) – serves as a Node.js framework
@@ -84,8 +84,8 @@ Now add the dev script to the package.json file
 ​ start the docker containers
 
 ```shell
-#up docker container for scylladb
-docker compose up -d 
+#up docker containers and build
+docker compose up -d --build  
 #see the docker containers  
 docker compose ps  
 #stop the docker containers  
@@ -99,9 +99,11 @@ docker compose exec scylla cqlsh -u username -p password
 ```
 
 **Note:** By default backend service listens on `TCP/3000` port
+
 **Note:** for running node application
+
 ```shell
-    npm run dev
+npm run dev
 ```
 
 see the images of runnig project from [here](https://github.com/azita-abdollahi/nodeScyllaDB/tree/master/img).
