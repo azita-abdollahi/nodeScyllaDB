@@ -99,9 +99,10 @@ docker compose exec scylla cqlsh -u username -p password
 ```
 
 **Note:** By default backend service listens on `TCP/3000` port
+
 **Note:** for running node application
 ```shell
-    npm run dev
+npm run dev
 ```
 
 see the images of runnig project from [here](https://github.com/azita-abdollahi/nodeScyllaDB/tree/master/img).
