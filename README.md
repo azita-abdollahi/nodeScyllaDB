@@ -1,6 +1,6 @@
-## What is [ScyllaDB](https://www.scylladb.com/)?
+## What is ScyllaDB?
 
-[ScyllaDB](https://docs.scylladb.com/stable/) is a distributed NoSQL database that is highly compatible with Cassandra. It is written in C++ and offers improved performance and efficiency compared to Cassandra. ScyllaDB provides low-latency and high-throughput data storage and is a popular choice for applications that require real-time data processing.
+[ScyllaDB](https://docs.scylladb.com/stable/) is a distributed NoSQL database that is highly compatible with Cassandra. It is written in C++ and offers improved performance and efficiency compared to Cassandra. [ScyllaDB](https://www.scylladb.com/) provides low-latency and high-throughput data storage and is a popular choice for applications that require real-time data processing.
 
 ## Express-Cassandra
 
