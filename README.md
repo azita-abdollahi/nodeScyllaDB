@@ -107,3 +107,5 @@ npm run dev
 ```
 
 see the images of runnig project from [here](https://github.com/azita-abdollahi/nodeScyllaDB/tree/master/img).
+
+see wiki for work with cqlsh from [here](https://github.com/azita-abdollahi/nodeScyllaDB/wiki/work-with-cqlsh).
